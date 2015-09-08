@@ -1,0 +1,90 @@
+				
+HTML{ 
+  height: 100%;
+}
+.delante { 
+  width: 614px;
+  margin: 100px auto 0 auto;
+  background: -moz-linear-gradient(center top , #EFE38C, #ACCFE3) no-repeat scroll 0 0 #EED7D1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EFE38C), to(#ACCFE3), color-stop(0.7, #EED7D1));
+  background-image: url(delante.jpg);
+  background-repeat:no-repeat;
+  height:380px;
+  
+}
+.detras{
+ width: 950px;
+  margin: 20px auto 0 auto;
+  background: -moz-linear-gradient(center top , #EED7D1, #ACCFE3) no-repeat scroll 0 0 #EED7D1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EED7D1), to(#ACCFE3), color-stop(0.7, #EED7D1));
+}
+
+.tbody { 
+  font: normal .85em georgia, sans-serif;
+ 
+}
+.priape{
+position: relative;
+	left:180px;
+	top:20px;
+	
+}
+.segape{
+position: relative;
+	left:180px;
+	top:25px;
+}
+.Sex{
+position: relative;
+left:180px;
+top:35px;
+}
+.nac{
+position: relative;
+left:180px;
+top:45px;
+}
+.fech{
+position: relative;
+left:180px;
+top:55px;
+}
+.idesp{
+position: relative;
+left:180px;
+top:65px;
+}
+.val{
+position: relative;
+left:180px;
+top:75px;
+}
+
+.numdni{
+	position: relative;
+	top:340px;
+	left:20px;
+}
+TABLE { 
+  margin: 10px 0 30px 0;
+  border: 2px solid #000;
+  
+}
+
+TABLE tr th, TABLE tr td { 
+
+  color: black;
+  padding: 7px 4px;
+  text-align: left;
+  vertical-align: top;
+  border: 2px solid #000;
+  padding: 0.5em;
+
+
+}
+  
+TABLE tr td { 
+  background: #DDD;
+  color: #47433F;
+  border-top: 1px solid #FFF;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml-stylesheet type="text/css" href="css3.css"?>
+
+ <!-- Definicion de elementos -->
+	<!ELEMENT listaDNI (dni)+>
+	<!ELEMENT dni  (numDni, idesp, nombres, primerAp, segundoAp, nacionalidad, fecha, valido, sexo, dir, lugar, prov, lugarNac, pais, padre, madre, equipo)>
+	<!ELEMENT numDni (#PCDATA)>
+	<!ELEMENT idesp (#PCDATA)>
+	<!ELEMENT nombres (#PCDATA)>
+	<!ELEMENT primerAp (#PCDATA)>
+	<!ELEMENT segundoAp (#PCDATA)>
+	<!ELEMENT nacionalidad EMPTY>
+	<!ELEMENT fecha EMPTY >
+	<!ELEMENT valido EMPTY >	
+	
+	<!ELEMENT sexo (#PCDATA)>
+	<!ELEMENT dir (tipo | dom | numero | piso | letra)*>
+		<!ELEMENT tipo (#PCDATA)>
+		<!ELEMENT  dom (#PCDATA)>
+		<!ELEMENT numero (#PCDATA)>
+		<!ELEMENT piso (#PCDATA)>
+		<!ELEMENT letra (#PCDATA)>
+	<!ELEMENT lugar (#PCDATA)>
+	<!ELEMENT prov (#PCDATA)>
+	<!ELEMENT lugarNac (#PCDATA)>
+	<!ELEMENT pais (#PCDATA)>
+	<!ELEMENT padre (#PCDATA)>
+	<!ELEMENT madre (#PCDATA)>
+	<!ELEMENT equipo (#PCDATA)>
+	
+ <!-- Definicion de atributos -->
+	<!ATTLIST nacionalidad 
+	 nald CDATA #REQUIRED>
+	<!ATTLIST fecha
+	  dia CDATA #REQUIRED
+	  mes CDATA #REQUIRED
+	  year CDATA #REQUIRED
+	>
+	<!ATTLIST valido
+	  dia CDATA #REQUIRED
+	  mes CDATA #REQUIRED
+	  year CDATA #REQUIRED
+	>
+
+
+		
+

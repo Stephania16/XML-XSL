@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/css" href="css3.css"?>
+
+<!-- DEFINICIÓN DEL TIPO DE DOCUMENTO -->
+ <!-- Definicion de elementos -->
+ <!ELEMENT listaFacturas (factura+)>
+ <!ELEMENT factura (datos_empresa, datos_cliente, datos_factura)>
+ <!ELEMENT datos_empresa (nombre, dir, poblacion ,provincia, pais, cif,telefono?)>
+			 <!ELEMENT dir  ( tipo | dom | numero | piso)*>
+			 <!ELEMENT cif (#PCDATA)>
+			 <!ELEMENT telefono EMPTY>
+ <!ELEMENT datos_cliente (nombre, dir_env, poblacion, provincia, pais, telefonoC?)>
+			 <!ELEMENT dir_env ( tipo | dom | numero | piso)*>
+			 <!ELEMENT telefonoC (#PCDATA)>
+ <!ELEMENT datos_factura (fecha, linea*, iva, total)>
+			
+			 <!ELEMENT fecha EMPTY >
+			 <!ELEMENT total (#PCDATA)>
+ <!ELEMENT linea (ref, desc, cant, precio, importe)>
+			 <!ELEMENT ref (#PCDATA)>
+			 <!ELEMENT desc (#PCDATA)>
+			 <!ELEMENT cant (#PCDATA)>
+			 <!ELEMENT precio (#PCDATA)>
+			 <!ELEMENT importe (#PCDATA)>
+	<!-- elementos comunes-->
+     <!ELEMENT tipo (#PCDATA)>
+     <!ELEMENT dom (#PCDATA)>
+	 <!ELEMENT numero (#PCDATA)>
+	 <!ELEMENT piso (#PCDATA)>
+	 <!ELEMENT nombre (#PCDATA)>
+	 
+	   <!ELEMENT iva (#PCDATA)>
+	 <!ELEMENT poblacion (#PCDATA)>
+	 <!ELEMENT provincia (#PCDATA)>
+	 <!ELEMENT pais (#PCDATA)>
+ 
+
+ <!-- Definicion de atributos -->
+ <!ATTLIST factura num_factura ID #REQUIRED>
+ <!ATTLIST telefono num_telf CDATA #FIXED "99887766">
+ <!ATTLIST datos_cliente num_cli ID #REQUIRED>
+  <!ATTLIST datos_factura num_ped ID #REQUIRED>
+ <!ATTLIST datos_factura iva NMTOKEN #REQUIRED>
+ <!ATTLIST datos_factura forma_pago (efectivo|tarjeta) #REQUIRED>
+ <!ATTLIST datos_factura moneda CDATA #FIXED "Euro">
+ <!ATTLIST poblacion cod_postal CDATA "">
+ <!ATTLIST fecha
+	  dia CDATA #REQUIRED
+	  mes CDATA #REQUIRED
+	  year CDATA #REQUIRED
+	>
